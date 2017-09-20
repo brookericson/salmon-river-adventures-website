@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Carrois+Gothic|Caveat+Brush');
+
+/*******************************************
+
+font-family: 'Anton', sans-serif;
+font-family: 'Carrois Gothic', sans-serif;
+
+*******************************************/
+
+body {
+    background-color: whitesmoke;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caveat Brush', cursive;
+}
+
+p, li, a {
+   font-family: 'Carrois Gothic', sans-serif; 
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header #logo {
+ width: 50px;
+}
+
+header img {
+    width: 100%;
+}
+
+#temp {
+    color: whitesmoke;
+    margin: 0;
+    font-size: .8em;
+}
+
+#dropdownicon {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+
+#dropdownicon:hover {
+    color: #009999;
+}
+
+#dropdownicon:active {
+    color: #00bcbc;
+}
+
+
+header ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    padding: 0;
+    margin: 10px 0;
+    height: 100%;
+}
+
+header ul li {
+    list-style-type: none;
+    width: 100%;
+}
+
+header ul li a:link, header ul li a:visited {
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    width: 100%;
+    text-align: center;
+}
+
+header ul li a:hover{
+    color: #009999;
+    transition: 200ms;
+}
+
+header ul li a:active {
+    color: #00bcbc;
+}
+
+main {
+    margin: 0;
+    text-align: center;
+}
+
+main section {
+    display: flex;
+    flex-flow: row wrap;
+    opacity: 1;
+}
+
+#section_1 {
+    background: url("../images/home_banner.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 40px 0 80px 0;
+}
+
+#section_1 h1 {
+    padding: 20px 0;
+    width: 60%;
+}
+
+#section_1 #call_to_action_button{
+    border-radius: 2px;
+    width: 92%;
+    max-width: 333px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#section_1 a:link, #section_1 a:visited {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+    border: solid 5px black;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    width: 170px;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#section_1 a:hover {
+    padding: 10px 20px;
+    transition: 200ms;
+}
+
+#section_1 a:active {
+    background: #00bcbc;
+}
+
+#section_2 {
+    display: flex;
+    flex-flow: column;
+}
+
+#section_2 p {
+        padding: 70px 30px;
+}
+
+.section_2_left {
+    width: 100%;
+}
+
+.section_2_left img {
+    width:100%;
+}
+
+footer {
+    background: black;
+    color: darkslategray;
+    padding: 15px;
+    font-size: .85em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+footer a:link, footer a:visited{
+    text-decoration: none;
+    color: darkslategray;    
+}
+
+
+/************** Adventure Trips ********************/
+
+#adventure_trips_main {
+    background: url("../images/calm_river.jpg") no-repeat center;
+    background-size: cover; 
+    padding: 25px 0;
+} 
+
+#adventure_trips_main h1 {
+    font-size: 2.5em;
+    margin: 10px 0 0 0;
+}
+
+
+#adventures_section {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 40px;
+}
+
+.adventure_info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    width: 100%;
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0.9); 
+}
+
+.adventure_info h3 {
+    font-family: 'Carrois Gothic', sans-serif;
+    font-size: 1.6em;
+    margin: 13px;
+}
+
+#dollar-sign {
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+    z-index: -1;
+}
+
+.adventure_info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.adventure_info ul li {
+    padding: 13px;
+    border-bottom: lightgray .1px solid;
+}
+
+.adventure_info .signup a:link, .adventure_info .signup a:visited {
+    border: black solid 4px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-weight: lighter;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 7px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.adventure_info .signup a:hover {
+      padding: 12px 60px;
+    transition: 200ms;
+}
+
+.adventure_info p {
+    color: white;
+    font-size: 3.5em;
+    padding: 30px 0;
+    margin: 0
+}
+
+#beginner p {
+    background: #4ECDCD;
+}
+
+#intermediate p {
+    background: #FFCA61;
+}
+
+#advanced p {
+    background: #FF6161;
+}
+
+/****************** sign up ******************************/
+
+#sign_up_main {
+    background: #151719;
+    padding: 25px 0 0 0;
+    color: whitesmoke;
+}
+
+#sign_up_main h1 {
+    margin: 0 0 25px;
+    font-size: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+    margin: auto;
+    max-width: 400px;
+    padding-bottom: 20px;
+}
+
+label {
+    text-align: left;
+    margin: 15px 0 2px 0;
+    font-size: 20px;
+}
+
+#textarea-label {
+    color: gray;
+    font-size: 18px;
+}
+
+textarea {
+    background: black;
+    color: white;
+    border: gray 2px solid;
+}
+
+input {
+    height: 30px;
+    font-size: 18px;
+    background: #151719;
+    border: none;
+    border-bottom: gray 2px solid;
+    color: white;
+    margin: 10px 0;
+}
+
+.submitBtn {
+    height: 50px;
+    border: gray 4px solid;
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    font-weight: lighter;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 25px 0;
+}
+
+.submitBtn:hover {
+    height: 60px;
+     transition: 200ms;
+}
+
+/*******************contact***************************/
+
+#contactpage {
+    padding: 25px 0 0 0;
+     text-align: center;
+    color: #151719;
+}
+
+#contactpage h1 {
+    margin: 0; 
+    font-size: 2.5em;
+}
+
+#contact_left {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 25px;
+}
+
+#contact_right {
+    background: #009999;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+}
+
+#contact_right input {
+    background: #009999;
+    border-bottom: whitesmoke 3px solid;
+}
+
+#contact_right input::placeholder {
+    color: whitesmoke;
+}
+
+#questioncomment {
+    margin: 25px 0;
+}
+
+#description {
+    margin: auto;
+    padding: 25px 0 35px 0;
+    font-size: 2.5em;
+}
+
+#comment {
+    width:390px;
+    height: 200px;
+    margin-top: 7px;
+    background: #009999; 
+    border: whitesmoke 3px solid
+}
+
+#comment-lable {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#contact_right .submitBtn {
+    color: whitesmoke;
+    border: 3px whitesmoke solid;
+}
+
+/*****************************************************
+
+Tablet Screen Size
+
+******************************************************/
+
+
+@media (min-width: 616px) {
+
+header {
+        align-items: flex-end;
+    }
+
+#temp {
+    color: whitesmoke;
+    margin: 0;
+    font-size: .8em;
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 15px
+}
+
+#dropdownicon {
+    display: none;
+}
+
+    
+header ul{
+    display: flex !important;
+    flex-flow: row nowrap;
+    position: inherit;
+    width: inherit;
+    height: 30px;
+    margin: 0;
+}
+
+header ul li {
+    width: inherit;
+    padding: 0 5px;
+}
+
+header ul li a:link, header ul li a:visited {
+    font-size: .9em;
+}
+
+#section_1 {
+    padding: 210px 0;
+}
+
+#section_1 h1 {
+    font-size: 3.5em;
+    padding: 20px 0 0;
+    margin: 0 0 0px;
+    width: 85%;
+}
+
+#section_1 #call_to_action_button{
+   background: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+
+#section_1 a {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: lighter;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    border: solid 5px black;
+    border-radius: 7px;
+}
+
+#section_2 {
+    display: flex;
+    flex-flow: column;
+}
+
+#section_2 p {
+        padding: 150px 30px;
+}
+
+footer {
+    background: black;
+    color: darkslategray;
+    padding: 15px;
+    font-size: .85em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+footer a:link, footer a:visited{
+    text-decoration: none;
+    color: darkslategray;    
+}
+    
+    #adventures_section {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+    #adventure_trips_main h1 {
+        font-size: 3.5em;
+    }
+    
+.adventure_info {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.8); 
+}
+    #last {
+        padding-top: 103px;
+    }
+    
+    
+}
+    
+    
+/******************************************************************
+    
+    Desktop
+    
+******************************************************************/
+    @media (min-width: 1024px){
+    #adventures_section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1024px;
+    margin: auto;
+}
+        
+        
+    footer {
+        flex-flow: row;
+        justify-content: space-around;
+    }
+        
+        #sign_up_main {
+    background: #151719;
+    color: whitesmoke;
+            padding-top: 50px;
+        
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+    margin: auto;
+    max-width: 400px;
+    padding-bottom: 50px;
+}
+    #contactpage {
+    padding: 0 0 0 0;
+     text-align: center;
+}
+
+#container-contact {
+    display: flex;
+    flex-flow: row-reverse;
+    text-align: left;
+        }
+
+
+#contact_left {
+    flex-flow: column-reverse;
+    padding: 0 3%;
+    width: 60%;
+}
+        
+#questioncomment iframe {
+    height: 400PX;
+    WIDTH: 100%;
+        }
+
+#contact_right {
+    width: 40%
+}
+
+
+#description {
+    margin: 0 7.5% ;
+    padding: 25px 0 0 0;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+#comment {
+    width: 97%;
+    height: 200px;
+    margin-top: 7px;
+    background: #009999; 
+    border: whitesmoke 3px solid
+}
+
+#comment-lable {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#contact_right .submitBtn {
+    color: whitesmoke;
+    border: 3px whitesmoke solid;
+}
+    }
